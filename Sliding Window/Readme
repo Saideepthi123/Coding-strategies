@@ -30,7 +30,7 @@ Pattern
 
 public List<Integer> findSubstring(String s, String[] words) {
         int low = 0;
-        int window_size = words.length * words[0].length();
+        int window_size = k;
         ArrayList<Integer> ans = new ArrayList<>();
 
         while (low < s.length()-window_size+1)
@@ -43,3 +43,27 @@ public List<Integer> findSubstring(String s, String[] words) {
         return ans;
     }
 }
+
+Variable window
+Pattern
+
+public int lengthOfLongestSubstring(String s) {
+        int low = 0;
+        int maxlength = 0; or int minlength = float("inf);
+
+        for (int right = 0; right < s.length(); right++)
+        {
+            if () # logic satisfies
+            # update the maxlength with max length
+            or # update the min length accordinly
+
+            else 
+            # write code according to your logic 
+
+            low++
+        }
+        return maxlength;
+
+}
+
+
