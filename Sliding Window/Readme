@@ -44,12 +44,12 @@ public List<Integer> findSubstring(String s, String[] words) {
     }
 }
 
-Variable window
+Variable window hashing method
 Pattern
 
 public int lengthOfLongestSubstring(String s) {
         int low = 0;
-        int maxlength = 0; or int minlength = float("inf);
+        int maxlength = 0; 
 
         for (int right = 0; right < s.length(); right++)
         {
@@ -60,10 +60,37 @@ public int lengthOfLongestSubstring(String s) {
             else 
             # write code according to your logic 
 
-            low++
+            low++; ( update low and right accordingly)
         }
         return maxlength;
 
 }
 
+Variable window two pointer method
+Pattern
+ public int minSubArrayLen(int target, int[] nums) {
+        int low = 0;
+        int minlength = Integer.MAX_VALUE;
+        int high = 0;
+        int sum = 0;
+
+        while (low < nums.length && high < nums.length) {
+            
+            sum += nums[high];
+            
+            while (# write logic) {
+                
+                minlength = Math.min(minlength, high - low + 1); (Update minlength accordingly )
+                
+                
+                sum -= nums[low];
+                low++;
+            }
+            
+           
+            high++;
+        }
+        return minlength == Integer.MAX_VALUE ? 0 : minlength;
+    }
+}
 
